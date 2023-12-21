@@ -37,3 +37,15 @@
 
 // const addTwo = (num1,num2) => (num1+num2)
 // console.log(addTwo(3,6));
+
+// const addTwo = () => ({user : "Jacksparrow"})
+// console.log(addTwo());
+
+// Passing Array In Function
+
+// const myNewArray = [200,400,100]
+// function return2num(getArray) {
+//     return getArray[1]
+// }
+// console.log(return2num(myNewArray));
+
