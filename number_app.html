@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+.result {
+background-color:teal;
+padding-top:25px;
+width:auto;
+border-radius:8px;
+text-align:center;
+height:250px;
+color:purple;
+
+}
+.txt {
+color:navy;
+font-size:80px;
+}
+button {
+background-color:gold;
+border-style:none;
+height:40px;
+margin-left:40px;
+border-radius:8px;
+}
+</style>
+</head>
+<body>
+    <label >Choose a Month:</label>
+<select name="Month" id="inp"  >
+    <option >Select</option>
+    <option value="JAN" >January</option>
+    <option value="FEB" >February</option>
+    <option value="MAR" >March</option>
+    <option value="APR" >April</option>
+    <option value="MAY" >May</option>
+    <option value="JUN" >June</option>
+    <option value="JUL" >July</option>
+    <option value="AUG" >August</option>
+    <option value="SEP" >September</option>
+    <option value="OCT" >October</option>
+    <option value="NOV" >November</option>
+    <option value="DEC" >December</option>
+
+
+</select>
+<button id="btn" onclick="on()" >Get Token</button>
+<br><br>
+<div class="result ">
+<h2>Real Guess No :</h2>
+        <h3 id="info" class="txt"  ></h3>      
+   </div>     
+        
+<script type="text/javascript">
+function on(){
+    const info = document.getElementById("info")
+    const Id = document.getElementById("inp").value;
+        const min = 1
+        const max = 40
+        
+        
+const draw = Math.floor(Math.random() * (max - min + 1)) + min;
+  info.innerHTML = draw; 
+ 
+ 
+localStorage.setItem(Id,draw);
+localStorage.getItem(Id)
+
+// localStorage.getItem(key)
+// localStorage.removeItem(ProductId)   
+
+}
+   
+</script>
+</body>
+</html>
