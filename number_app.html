@@ -51,21 +51,39 @@ border-radius:8px;
 <h2>Real Guess No :</h2>
         <h3 id="info" class="txt"  ></h3>      
    </div>     
-        
+ <h3>Results :</h3>
+ <h3 id="res"></h3>       
 <script type="text/javascript">
-function on(){
+function on() {
     const info = document.getElementById("info")
     const Id = document.getElementById("inp").value;
         const min = 1
-        const max = 40
-        
-        
-const draw = Math.floor(Math.random() * (max - min + 1)) + min;
-  info.innerHTML = draw; 
- 
- 
-localStorage.setItem(Id,draw);
-localStorage.getItem(Id)
+        const max = 9
+        const draw = Math.floor(Math.random() * (max - min + 1)) + min;
+        const app = [1,2,3,4]
+
+for (let i = 0; i < max; i++) {
+    if (app[i] == draw) {
+      info.innerHTML = draw;
+      localStorage.setItem(Id,draw); 
+    }
+    else if(app[i]!=draw)
+    {
+        info.innerHTML = "Already taken";
+
+    }
+}
+  
+//  let res = document.getElementById("res");
+//  res = localStorage.getItem(Id)
+//  var records = window.localStorage.getItem(key); //searches for the key in localStorage
+//             var paragraph = document.createElement("h2");
+//             var infor = document.createTextNode(records);
+//             paragraph.appendChild(infor);
+//             var element = document.getElementById("retrieve");
+//             element.appendChild(paragraph);
+
+
 
 // localStorage.getItem(key)
 // localStorage.removeItem(ProductId)   
