@@ -5,7 +5,7 @@
 // const obj1 = {
 //     [mysym] : "My infor"
 // }
-// console.log(obj1[mysym]);
+// console.log(obj1[mysym]);x
 
 // function cart(...num1) {
 //     return num1
