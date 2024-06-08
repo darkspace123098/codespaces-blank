@@ -6,7 +6,7 @@ class User {
     }
 
     get password(){
-        return `ffff${this._password}ffff`
+        return `code${this._password}128`
     }
     set password(value){
         this._password = value;
