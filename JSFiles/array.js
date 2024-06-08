@@ -1,3 +1,4 @@
+// Basic Array Operations
 const myArr = [2,7,"first",10,true]
 // console.log(myArr);
 
@@ -20,5 +21,14 @@ const myArr = [2,7,"first",10,true]
 // console.log(newArr);
 // console.log(typeof newArr);
 
-const sArray = myArr.slice(1,5)
-console.log(sArray);
+// const sliceArray = myArr.slice(1,4)
+// console.log(sliceArray);
+// console.log(myArr);
+
+// const spliceArray = myArr.splice(1,4)
+// console.log(spliceArray);
+// console.log(myArr);
+
+
+// Expert Array Operations
+
